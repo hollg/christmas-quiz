@@ -1,0 +1,88 @@
+{
+  "1": {
+    "name": "Lockdown",
+    "questions": [
+      {
+        "question": "In what month did the first national lockdown begin in England?",
+        "answer": "March",
+        "isRevealed": false
+      },
+      {
+        "question": "What is the lowest 'COVID alert level' under the English regional lockdown system?",
+        "answer": "Medium",
+        "isRevealed": false
+      },
+      {
+        "question": "How many tiers does the Scottish regional lockdown system have?",
+        "answer": "5",
+        "isRevealed": false
+      },
+      {
+        "question": "What does SAGE stand for?",
+        "answer": "Scientific Advisory Group for Emergencies",
+        "isRevealed": false
+      },
+      {
+        "question": "Who is the Government Chief Scientific Adviser: Chris Whitty or Patrick Vallance?",
+        "answer": "Patrick Vallance",
+        "isRevealed": false
+      }
+    ],
+    "currentQuestionIndex": 0
+  },
+  "2": {
+    "name": "Picture round",
+    "questions": [
+      {
+        "question": "In what month did the first national lockdown begin?",
+        "answer": "March",
+        "isRevealed": false
+      }
+    ],
+    "currentQuestionIndex": 0
+  },
+  "3": {
+    "name": "Natural world",
+    "questions": [
+      {
+        "question": "In what month did the first national lockdown begin?",
+        "answer": "March",
+        "isRevealed": false
+      }
+    ],
+    "currentQuestionIndex": 0
+  },
+  "4": {
+    "name": "Music",
+    "questions": [
+      {
+        "question": "In what month did the first national lockdown begin?",
+        "answer": "March",
+        "isRevealed": false
+      }
+    ],
+    "currentQuestionIndex": 0
+  },
+  "5": {
+    "name": "Film & TV",
+    "questions": [
+      {
+        "question": "In what month did the first national lockdown begin?",
+        "answer": "March",
+        "isRevealed": false
+      }
+    ],
+    "currentQuestionIndex": 0
+  },
+  "6": {
+    "name": "Sport",
+    "questions": [
+      {
+        "question": "In what month did the first national lockdown begin?",
+        "answer": "March",
+        "isRevealed": false
+      }
+    ],
+    "currentQuestionIndex": 0
+  }
+}
