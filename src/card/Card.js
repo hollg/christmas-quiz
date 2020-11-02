@@ -1,17 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 
 import styles from "./Card.module.scss";
 
-const Card = ({ name, number, begin }) => {
-  const [isRevealed, setIsRevealed] = useState(false);
-
+const Card = ({ name, number, shouldShowName, showName, begin }) => {
   return (
     <div key={name} className={styles.card}>
       <h1>{number}</h1>
-      <p>{isRevealed ? name : "?????"}</p>
+      <p>{shouldShowName ? name : "?????"}</p>
       <button
         onClick={() => {
-          setIsRevealed(true);
+          showName(true);
           begin();
         }}
       >

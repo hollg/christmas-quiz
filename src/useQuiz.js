@@ -78,6 +78,22 @@ const reducer = (state, action) => {
       saveState(newState);
       return newState;
     }
+    case "revealCategory": {
+      const { categoryId } = action;
+      const category = state.categories[categoryId];
+      const newState = {
+        ...state,
+        categories: {
+          ...state.categories,
+          [categoryId]: {
+            ...category,
+            isRevealed: true,
+          },
+        },
+      };
+      saveState(newState);
+      return newState;
+    }
     case "revealAnswer": {
       const { categoryId, questionIndex } = action;
       const category = state.categories[categoryId];

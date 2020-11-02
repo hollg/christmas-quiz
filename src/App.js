@@ -21,9 +21,12 @@ function App() {
   const revealQuestion = (categoryId, questionIndex) =>
     dispatch({ type: "revealAnswer", categoryId, questionIndex });
 
+  const revealCategory = (categoryId) =>
+    dispatch({ type: "revealCategory", categoryId });
+
   return (
     <main>
-      <h1> Quiz! </h1>
+      <h1 className={styles.title}> Never Gonna Quiz You Up </h1>
       {Object.entries(teams).map(([id, team]) => (
         <div key={team.name}>
           <h2>
@@ -42,7 +45,6 @@ function App() {
         </div>
       ))}
 
-      {/* key forces creation of a new component when we swap rounds, effectively resetting round states */}
       <ActiveRound
         round={activeRound}
         key={activeRound?.name}
@@ -59,6 +61,8 @@ function App() {
             name={category.name}
             number={id}
             key={category.name}
+            shouldShowName={category.isRevealed}
+            showName={() => revealCategory(id)}
             begin={() =>
               dispatch({ type: "setActiveCategoryId", categoryId: id })
             }

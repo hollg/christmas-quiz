@@ -1,6 +1,7 @@
 {
   "1": {
     "name": "Lockdown",
+    "isRevealed:": false,
     "questions": [
       {
         "question": "In what month did the first national lockdown begin in England?",
@@ -32,6 +33,7 @@
   },
   "2": {
     "name": "Landmarks",
+    "isRevealed:": false,
     "questions": [
       {
         "question": "What landmark is this?",
@@ -68,6 +70,7 @@
   },
   "3": {
     "name": "Natural world",
+    "isRevealed:": false,
     "questions": [
       {
         "question": "In what month did the first national lockdown begin?",
@@ -79,6 +82,7 @@
   },
   "4": {
     "name": "Music",
+    "isRevealed:": false,
     "questions": [
       {
         "question": "In what month did the first national lockdown begin?",
@@ -90,6 +94,7 @@
   },
   "5": {
     "name": "Film & TV",
+    "isRevealed:": false,
     "questions": [
       {
         "question": "In what month did the first national lockdown begin?",
@@ -101,6 +106,7 @@
   },
   "6": {
     "name": "Sport",
+    "isRevealed:": false,
     "questions": [
       {
         "question": "In what month did the first national lockdown begin?",
