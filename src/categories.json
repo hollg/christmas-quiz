@@ -31,12 +31,37 @@
     "currentQuestionIndex": 0
   },
   "2": {
-    "name": "Picture round",
+    "name": "Landmarks",
     "questions": [
       {
-        "question": "In what month did the first national lockdown begin?",
-        "answer": "March",
-        "isRevealed": false
+        "question": "What landmark is this?",
+        "answer": "Great Wall of China",
+        "isRevealed": false,
+        "hasImage": true
+      },
+      {
+        "question": "What landmark is this?",
+        "answer": "The Colosseum",
+        "isRevealed": false,
+        "hasImage": true
+      },
+      {
+        "question": "What landmark is this?",
+        "answer": "Co-op Bank / Stockport Pyramid",
+        "isRevealed": false,
+        "hasImage": true
+      },
+      {
+        "question": "What landmark is this?",
+        "answer": "Niagara Falls",
+        "isRevealed": false,
+        "hasImage": true
+      },
+      {
+        "question": "What landmark is this?",
+        "answer": "The Trafford Centre",
+        "isRevealed": false,
+        "hasImage": true
       }
     ],
     "currentQuestionIndex": 0

@@ -11,7 +11,12 @@ const ActiveRound = ({
     incrementQuestion();
   };
 
-  if (!round) return null;
+  if (!round)
+    return (
+      <div className={styles.activeRound}>
+        <h1> Pick a round to begin ... </h1>
+      </div>
+    );
 
   const { currentQuestionIndex } = round;
   const question = round.questions[currentQuestionIndex];
@@ -22,6 +27,13 @@ const ActiveRound = ({
         {round.name}: Question {currentQuestionIndex + 1}
       </h1>
       <p>{question.question}</p>
+      {question.hasImage && (
+        <img
+          src={`${process.env.PUBLIC_URL}/img/${round.name}/${currentQuestionIndex}.png`}
+          alt=""
+          style={{ height: "300px", width: "300px" }}
+        />
+      )}
       <p>
         <strong>Answer: {question.isRevealed ? question.answer : "???"}</strong>
       </p>

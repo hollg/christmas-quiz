@@ -1,7 +1,7 @@
 body {
   font-family: Helvetica, sans-serif;
-  background-color: #edf2f4;
-  color: #2b2d42;
+  background-color: #F5F5F5;
+  color: #14213D;
 }
 
 .grid {
@@ -11,10 +11,14 @@ body {
 }
 
 .grid > * {
-  flex: 1 0 5em; /* 3 (edit me!) */
+  flex: 1 0 25em; /* 3 (edit me!) */
   margin: 0.5em; /* 4 (edit me!) */
 }
 
 h1 {
-  color: #bb0a21;
+  color: #FDA10D;
+}
+
+.reset_button {
+  float: right;
 }

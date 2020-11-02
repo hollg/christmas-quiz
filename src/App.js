@@ -41,7 +41,17 @@ function App() {
           </h2>
         </div>
       ))}
-      <button onClick={() => dispatch({ type: "reset" })}>Reset quiz</button>
+
+      {/* key forces creation of a new component when we swap rounds, effectively resetting round states */}
+      <ActiveRound
+        round={activeRound}
+        key={activeRound?.name}
+        incrementQuestion={() => incrementQuestion(activeCategoryId)}
+        decrementQuestion={() => decrementQuestion(activeCategoryId)}
+        revealQuestion={(questionIndex) =>
+          revealQuestion(activeCategoryId, questionIndex)
+        }
+      />
       <h2>Categories:</h2>
       <div className={styles.grid}>
         {Object.entries(categories).map(([id, category]) => (
@@ -55,17 +65,14 @@ function App() {
           />
         ))}
       </div>
-      {/* key forces creation of a new component when we swap rounds, effectively resetting round states */}
-      <ActiveRound
-        round={activeRound}
-        key={activeRound?.name}
-        incrementQuestion={() => incrementQuestion(activeCategoryId)}
-        decrementQuestion={() => decrementQuestion(activeCategoryId)}
-        revealQuestion={(questionIndex) =>
-          revealQuestion(activeCategoryId, questionIndex)
-        }
-      />
+
       <WheelOfFortune />
+      <button
+        onClick={() => dispatch({ type: "reset" })}
+        className={styles.reset_button}
+      >
+        Reset quiz
+      </button>
     </main>
   );
 }
