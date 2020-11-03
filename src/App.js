@@ -32,8 +32,8 @@ function App() {
       <h1 className={styles.title}> Never Gonna Quiz You Up </h1>
       {Object.entries(teams).map(([id, team]) => (
         <div key={team.name}>
-          <h2>{team.name} </h2>
-          <p>Points: {team.score}</p>
+          <h2 className={styles.page_heading}>{team.name} </h2>
+          <p className={styles.meta}>Points: {team.score}</p>
           <button
             onClick={() => dispatch({ type: "incrementScore", teamId: id })}
           >
@@ -44,7 +44,7 @@ function App() {
           >
             -
           </button>
-          <p>
+          <p className={styles.meta}>
             Free pass:{" "}
             <input
               type="checkbox"
@@ -67,7 +67,7 @@ function App() {
           revealQuestion(activeCategoryId, questionIndex)
         }
       />
-      <h2>Categories:</h2>
+      <h2 className={styles.page_heading}>Categories:</h2>
       <div className={styles.grid}>
         {Object.entries(categories).map(([id, category]) => (
           <Card

@@ -1,11 +1,12 @@
 body {
   font-family: Helvetica, sans-serif;
-  background-color: #f5f5f5;
-  color: #14213d;
+  background-color: #ebf8ff;
+  color: #0A1233;
 }
 
 .title {
   text-align: center;
+  color: #ffbb33;
 }
 
 .grid {
@@ -19,18 +20,26 @@ body {
   margin: 0.5em;
 }
 
-h1, h2 {
-  color: #fda10d;
-}
-
 h1 {
   font-size: 2.5rem;
 }
 
 h2 {
+  color: #0A1233;
   font-size: 1.75rem;
+}
+
+.page_heading {
+  color: #ffbb33;
+  margin: 0;
+  margin-bottom: 0.5rem;
 }
 
 .reset_button {
   float: right;
+}
+
+.meta {
+  margin: 0;
+  color: #0a0a0a;
 }

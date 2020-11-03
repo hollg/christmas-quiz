@@ -1,9 +1,19 @@
+.active_round_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .activeRound {
-  background-color: #E0E0E0;
+  background-color: white;
   border-radius: 4px;
   text-align: center;
   padding: 1rem;
   margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  // border: 1px solid #8A8A93;
+  box-shadow: #8A8A93 0px 8px 24px;
+  width: 500px;
 }
 
 .question {
