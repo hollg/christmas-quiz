@@ -93,12 +93,32 @@
     "currentQuestionIndex": 0
   },
   "5": {
-    "name": "Film & TV",
+    "name": "TV",
     "isRevealed:": false,
     "questions": [
       {
-        "question": "In what month did the first national lockdown begin?",
-        "answer": "March",
+        "question": "🌶 🐷",
+        "answer": "Peppa Pig",
+        "isRevealed": false
+      },
+      {
+        "question": "👩🏽‍⚕️ 🤷🏾‍♂️",
+        "answer": "Doctor Who",
+        "isRevealed": false
+      },
+      {
+        "question": "♥️ 🏝",
+        "answer": "Love Island",
+        "isRevealed": false
+      },
+      {
+        "question": "🧛‍♂️ ⬇️",
+        "answer": "Countdown",
+        "isRevealed": false
+      },
+      {
+        "question": "🗞 🌃",
+        "answer": "News Night",
         "isRevealed": false
       }
     ],
@@ -109,8 +129,18 @@
     "isRevealed:": false,
     "questions": [
       {
-        "question": "In what month did the first national lockdown begin?",
-        "answer": "March",
+        "question": "Which Premier League team has the southernmost stadium?",
+        "answer": "Brighton & Hove Albion",
+        "isRevealed": false
+      },
+      {
+        "question": "True or false: golf courses in England have to shut during the November national lockdown",
+        "answer": "True",
+        "isRevealed": false
+      },
+      {
+        "question": "Which Premier League team has the southernmost stadium?",
+        "answer": "Brighton & Hove Albion",
         "isRevealed": false
       }
     ],

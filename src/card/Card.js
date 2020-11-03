@@ -5,7 +5,7 @@ import styles from "./Card.module.scss";
 const Card = ({ name, number, shouldShowName, showName, begin }) => {
   return (
     <div key={name} className={styles.card}>
-      <h1>{number}</h1>
+      <h2>{number}</h2>
       <p>{shouldShowName ? name : "?????"}</p>
       <button
         onClick={() => {

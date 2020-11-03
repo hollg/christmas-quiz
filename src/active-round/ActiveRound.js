@@ -23,10 +23,10 @@ const ActiveRound = ({
 
   return (
     <div className={styles.activeRound}>
-      <h1>
+      <h2>
         {round.name}: Question {currentQuestionIndex + 1}
-      </h1>
-      <p>{question.question}</p>
+      </h2>
+      <p className={styles.question}>{question.question}</p>
       {question.hasImage && (
         <img
           src={`${process.env.PUBLIC_URL}/img/${round.name}/${currentQuestionIndex}.png`}
@@ -34,7 +34,7 @@ const ActiveRound = ({
           style={{ height: "300px", width: "300px" }}
         />
       )}
-      <p>
+      <p className={styles.answer}>
         <strong>Answer: {question.isRevealed ? question.answer : "???"}</strong>
       </p>
       <button
