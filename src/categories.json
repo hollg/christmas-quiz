@@ -1,6 +1,6 @@
 {
   "1": {
-    "name": "Lockdown",
+    "name": "Know Your Lockdown",
     "isRevealed:": false,
     "questions": [
       {
@@ -69,12 +69,32 @@
     "currentQuestionIndex": 0
   },
   "3": {
-    "name": "Natural world",
+    "name": "Film",
     "isRevealed:": false,
     "questions": [
       {
-        "question": "In what month did the first national lockdown begin?",
-        "answer": "March",
+        "question": "Which Disney cartoon featuring Eddie Murphy had a live action remake released this year?",
+        "answer": "Mulan",
+        "isRevealed": false
+      },
+      {
+        "question": "Which film won the Oscar for Best Picture this year?",
+        "answer": "Parasite",
+        "isRevealed": false
+      },
+      {
+        "question": "What is the name of the James Bond film whose release was postponed due to COVID-19?",
+        "answer": "No Time To Die",
+        "isRevealed": false
+      },
+      {
+        "question": "What is the name of the second Indiana Jones film?",
+        "answer": "Indiana Jones and the Temple of Doom",
+        "isRevealed": false
+      },
+      {
+        "question": "Which actor plays Rick O'Connell in The Mummy and George in George of the Jungle?",
+        "answer": "Brendan Frasier",
         "isRevealed": false
       }
     ],
@@ -85,8 +105,28 @@
     "isRevealed:": false,
     "questions": [
       {
-        "question": "In what month did the first national lockdown begin?",
-        "answer": "March",
+        "question": "What is the most viewed YouTube video of all time?",
+        "answer": "Baby Shark",
+        "isRevealed": false
+      },
+      {
+        "question": "According to the lyrics of Summer Nights from the musical Grease, what did Sandy and Danny drink together?",
+        "answer": "Lemonade",
+        "isRevealed": false
+      },
+      {
+        "question": "What is the smallest string instrument in an orchestra?",
+        "answer": "Violin",
+        "isRevealed": false
+      },
+      {
+        "question": "How many semitones are there in a perfect fifth?",
+        "answer": "7",
+        "isRevealed": false
+      },
+      {
+        "question": "Which symptom of COVID-19 is also the name of a song by Dame Shirley Bassey?",
+        "answer": "Fever",
         "isRevealed": false
       }
     ],
@@ -139,8 +179,18 @@
         "isRevealed": false
       },
       {
-        "question": "Which Premier League team has the southernmost stadium?",
-        "answer": "Brighton & Hove Albion",
+        "question": "How many bails are there in a game of cricket?",
+        "answer": "Four",
+        "isRevealed": false
+      },
+      {
+        "question": "True or false: squash balls are solid rubber",
+        "answer": "False",
+        "isRevealed": false
+      },
+      {
+        "question": "How many players are on a squash team?",
+        "answer": "Four",
         "isRevealed": false
       }
     ],

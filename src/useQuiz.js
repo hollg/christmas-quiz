@@ -117,6 +117,25 @@ const reducer = (state, action) => {
       return newState;
     }
 
+    case "toggleFreePass": {
+      const { teamId } = action;
+      const team = state.teams[teamId];
+      console.log("team:", team);
+      const newState = {
+        ...state,
+        teams: {
+          ...state.teams,
+          [teamId]: {
+            ...team,
+            hasFreePass: !team.hasFreePass,
+          },
+        },
+      };
+
+      saveState(newState);
+      return newState;
+    }
+
     case "reset": {
       saveState(initialState);
       return initialState;
@@ -131,10 +150,12 @@ const initialState = {
     1: {
       name: "Mum & Dad",
       score: 0,
+      hasFreePass: false,
     },
     2: {
       name: "Jenni & Jordan",
       score: 0,
+      hasFreePass: false,
     },
   },
   categories,

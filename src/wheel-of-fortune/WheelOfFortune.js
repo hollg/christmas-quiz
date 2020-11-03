@@ -11,7 +11,7 @@ const WheelOfFortune = () => {
       </button>
       {shouldShowWheel && (
         <iframe
-          src="https://wheeldecide.com/e.php?c1=%2B1+Point+to+your+team&c2=%2B1+Point+to+your+team&c3=%2B1+Point+to+your+team&c4=%2B+5+Points+to+your+team&c5=-+1+Point+to+the+other+team&c6=-+1+Point+to+the+other+team&c7=-+5+Points+to+your+team&col=pastel&t=Wheel+Of+Fortune&time=5"
+          src="https://wheeldecide.com/e.php?c1=%2B+1+point+to+your+team&c2=-+1+point+to+your+team&c3=%2B+2+points+to+your+team&c4=%2B+1+point+to+your+team&c5=%2B+1+free+pass&col=pastel&t=Wheel+Of+Fortune&time=5"
           width="500"
           height="500"
           scrolling="no"

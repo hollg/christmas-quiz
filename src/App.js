@@ -24,24 +24,37 @@ function App() {
   const revealCategory = (categoryId) =>
     dispatch({ type: "revealCategory", categoryId });
 
+  const toggleFreePass = (teamId) =>
+    dispatch({ type: "toggleFreePass", teamId });
+
   return (
     <main>
       <h1 className={styles.title}> Never Gonna Quiz You Up </h1>
       {Object.entries(teams).map(([id, team]) => (
         <div key={team.name}>
-          <h2>
-            {team.name}: {team.score}
-            <button
-              onClick={() => dispatch({ type: "incrementScore", teamId: id })}
-            >
-              +
-            </button>
-            <button
-              onClick={() => dispatch({ type: "decrementScore", teamId: id })}
-            >
-              -
-            </button>
-          </h2>
+          <h2>{team.name} </h2>
+          <p>Points: {team.score}</p>
+          <button
+            onClick={() => dispatch({ type: "incrementScore", teamId: id })}
+          >
+            +
+          </button>
+          <button
+            onClick={() => dispatch({ type: "decrementScore", teamId: id })}
+          >
+            -
+          </button>
+          <p>
+            Free pass:{" "}
+            <input
+              type="checkbox"
+              checked={team.hasFreePass}
+              onChange={() => {
+                console.log("toggling");
+                toggleFreePass(id);
+              }}
+            />
+          </p>
         </div>
       ))}
 
