@@ -10,6 +10,7 @@ import WheelOfFortune from "./wheel-of-fortune";
 function App() {
   const [{ teams, categories, activeCategoryId }, dispatch] = useQuiz();
 
+  console.log("active category id:", activeCategoryId);
   const activeRound = categories[activeCategoryId];
 
   const incrementQuestion = (categoryId) =>
@@ -27,9 +28,12 @@ function App() {
   const toggleFreePass = (teamId) =>
     dispatch({ type: "toggleFreePass", teamId });
 
+  const beginRound = (categoryId) =>
+    dispatch({ type: "beginRound", categoryId });
+
   return (
     <main>
-      <h1 className={styles.title}> Never Gonna Quiz You Up </h1>
+      <h1 className={styles.title}> Big Fat Quizmas of the Year </h1>
       {Object.entries(teams).map(([id, team]) => (
         <div key={team.name}>
           <h2 className={styles.page_heading}>{team.name} </h2>
@@ -66,6 +70,7 @@ function App() {
         revealQuestion={(questionIndex) =>
           revealQuestion(activeCategoryId, questionIndex)
         }
+        begin={() => beginRound(activeCategoryId)}
       />
       <h2 className={styles.page_heading}>Categories:</h2>
       <div className={styles.grid}>
